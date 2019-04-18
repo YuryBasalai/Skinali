@@ -48,6 +48,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -69,6 +73,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: #507fe1;
+  text-decoration: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
   background: none;
 }
@@ -77,9 +82,28 @@ body {
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
+  text-decoration: none;
   background-color: #507fe1;
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #ffffff;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  border: none;
+  width: 30px;
 }
 
 .bg-secondary {
@@ -446,6 +470,88 @@ body {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 50px;
+  }
+}
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog_card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card_buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-card_button {
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 11px;
+  height: 30px;
+}
+
+.catalog-card_tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card_image {
+  display: block;
+}
+
+.catalog_link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog_link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog_description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
   }
 }
 /*# sourceMappingURL=style.css.map */
